@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.panpili.pilicamserver.pb.helloworld";
+option java_outer_classname = "HelloWorldProto";
+option go_package = "try-grpc/pb/hello";
+//option objc_class_prefix = "HLW";
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting. Original method.
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+  // Sends another greeting. New method.
+  rpc SayHelloAgain (HelloRequest) returns (HelloReply) {}
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  // The name of the user.
+  string name = 1;
+}
+
+// The response message containing the greetings
+message HelloReply {
+  // The greeting message.
+  string message = 1;
+}
