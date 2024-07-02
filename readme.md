@@ -1,4 +1,4 @@
-# try grpc
+# try grpc go
 A quick start demo for grpc in go
 
 repo: https://github.com/grpc/grpc-go?tab=readme-ov-file
